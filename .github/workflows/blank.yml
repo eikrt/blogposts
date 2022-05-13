@@ -35,6 +35,6 @@ jobs:
           ls -la
           sudo mkdir -p /home/eino/repo
           cd /home/eino/repo
-          sudo git clone https://github.com/eikrt/blogposts.git
+          git clone git@github.com:eikrt/blogposts.git
           echo "Deployment succesful"
         
