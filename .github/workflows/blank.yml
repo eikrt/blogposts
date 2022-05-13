@@ -32,8 +32,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          sudo mkdir -p /home/eino/repo/
-          cd /home/eino/repo/
+          mkdir -p repo
+          cd repo
           git clone https://github.com/eikrt/blogposts.git
           echo "Deployment succesful"
         
