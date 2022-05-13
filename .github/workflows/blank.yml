@@ -29,10 +29,11 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
+          sudo su root
           sudo mkdir -p /home/eino/repo/blogposts
           cd /home/eino/repo/
           eval "$(ssh-agent -s)"
-          sudo ssh-add /root/.ssh/github
+          ssh-add /root/.ssh/github
           git clone git@github.com:eikrt/blogposts.git
           echo "Deployment succesful"
         
